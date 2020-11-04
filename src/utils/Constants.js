@@ -1,4 +1,3 @@
-import friend0 from "../Images/main.jpg";
 import friend1 from "../Images/friend1.jpg";
 import friend2 from "../Images/friend2.jpg";
 import friend3 from "../Images/friend3.jpg";
@@ -8,6 +7,7 @@ import friend6 from "../Images/friend6.jpg";
 import friend7 from "../Images/friend7.jpg";
 import friend8 from "../Images/friend8.jpg";
 import friend9 from "../Images/friend9.jpg";
+import friend0 from "../Images/main.jpg";
 
 export const homePage = 'home';
 export const contactPage = 'contact';
@@ -73,3 +73,4 @@ export const characters = {
 
 export const friends = Object.keys(characters);
 
+export const defaultHero = friends[0];

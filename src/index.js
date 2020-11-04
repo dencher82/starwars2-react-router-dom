@@ -8,11 +8,11 @@ import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
     <React.StrictMode>
-        {/*STEP 1*/}
         <BrowserRouter>
             <App/>
         </BrowserRouter>
-    </React.StrictMode>,
+    </React.StrictMode>
+    ,
     document.getElementById('root')
 );
 

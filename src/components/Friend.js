@@ -1,9 +1,10 @@
 import React from 'react';
 import style from '../css_modules/friend.module.css';
+import {characters, homePage} from "../utils/Constants";
+import {Link} from "react-router-dom";
 
 const Friend = props => {
-
-    let styles = 'col-4 p-1 ';
+    let styles = 'w-100 p-1 ';
     if (props.pos === 7) {
         styles += style.bottomLeft;
     }
@@ -11,7 +12,14 @@ const Friend = props => {
         styles += style.bottomRight;
     }
     return (
-        <img className={styles} src={props.picture} alt={props.name}/>
+        <Link className='col-4' to={`/${homePage}/${props.friend}`}>
+            <img
+                // onClick={() => props.changeHero(props.friend)}
+                className={styles}
+                src={characters[props.friend].img}
+                alt={characters[props.friend].name}
+            />
+        </Link>
     );
 };
 
