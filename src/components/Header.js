@@ -3,11 +3,10 @@ import Navigation from "./Navigation";
 import {characters} from "../utils/Constants";
 
 const Header = props => {
-
     return (
         <header>
-            <Navigation currentKey={props.currentKey}/>
-            <h1 className="text-center py-3">{characters[props.currentKey].name}</h1>
+            <Navigation hero={props.hero}/>
+            <h1 className="text-center py-3">{characters[props.hero].name}</h1>
         </header>
     );
 };
